@@ -5,20 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
     <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
     <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
   </head>
   <body>
-    <!-- HEADER START -->
-    <header class="header"></header>
-    <!-- HEADER END -->
-
-    <!-- MAIN START -->
-    <main class="main"></main>
-    <!-- MAIN END -->
-
-    <!-- FOOTER START -->
-    <footer class="footer"></footer>
-    <!-- FOOTER END -->
+    <img
+      class="title__img"
+      src="./images/SPLITTER.svg"
+      alt=""
+      width="86.66"
+      height="53.14"
+    />
+    <div class="calculator">
+      <div class="calculator__selecter">
+        <ul class="calculator__selecter_list">
+          <li class="calculator__selecter_item">
+            <form class="first_input" action="">
+              <label for="bill" class="calculator__selector_bill">Bill</label>
+              <input
+                id="bill"
+                class="calculator__selecter_price"
+                type="number"
+                placeholder="$"
+              />
+            </form>
+          </li>
+          <li class="calculator__selecter_item">
+            <p class="calculator__selecter_percentage">Select Tip %</p>
+            <div class="calculator__percentage_btns">
+              <ul class="calculator__percentage_btns_list">
+                <li class="calculator__percentage_btns_item">
+                  <p class="calculator__percentage_btns_item_text">5%</p>
+                </li>
+                <li class="calculator__percentage_btns_item">
+                  <p class="calculator__percentage_btns_item_text">10%</p>
+                </li>
+                <li class="calculator__percentage_btns_item">
+                  <p class="calculator__percentage_btns_item_text">15%</p>
+                </li>
+              </ul>
+              <ul class="calculator__percentage_btns_list">
+                <li class="calculator__percentage_btns_item">
+                  <p class="calculator__percentage_btns_item_text">25%</p>
+                </li>
+                <li class="calculator__percentage_btns_item">
+                  <p class="calculator__percentage_btns_item_text">50%</p>
+                </li>
+                <li class="calculator__percentage_btns_item_custom">
+                  <input
+                    class="calculator__percentage_btns_input_custom"
+                    type="number"
+                    placeholder="Custom"
+                  />
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="calculator__selecter_item">
+            <p class="calculator__people">Number of People</p>
+            <input type="number" class="calculator__people_input" />
+          </li>
+        </ul>
+      </div>
+      <div class="calculator__result">
+        <ul class="calculator__result_list">
+          <li class="calculator__result_item">
+            <div class="calculator__result_texts">
+              <p class="calculator__result_title">Tip Amount</p>
+              <p class="calculator__result_text">/ person</p>
+            </div>
+            <h2 class="calculator__result_price">$4.27</h2>
+          </li>
+          <li class="calculator__result_item">
+            <div class="calculator__result_texts">
+              <p class="calculator__result_title">Total</p>
+              <p class="calculator__result_text">/ person</p>
+            </div>
+            <h2 class="calculator__result_price">$32.79</h2>
+          </li>
+        </ul>
+        <div class="calculator__result_btn">RESET</div>
+      </div>
+    </div>
   </body>
 </html>
