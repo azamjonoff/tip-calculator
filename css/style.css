@@ -113,9 +113,9 @@ main {
   background-position: center left;
   padding: 6px 10px;
   border: 2px solid transparent;
-  
+
   &:focus {
-    border-color: #26C2AE;
+    border-color: #26c2ae;
   }
 }
 
