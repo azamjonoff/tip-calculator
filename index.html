@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
     <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
   </head>
   <body>
@@ -21,12 +21,14 @@
         <ul class="calculator__selecter_list">
           <li class="calculator__selecter_item">
             <form class="first_input" action="">
-              <label for="bill" class="calculator__selector_bill">Bill</label>
+              <label for="bill_price" class="calculator__selecter_bill"
+                >Bill</label
+              >
               <input
-                id="bill"
-                class="calculator__selecter_price"
+                class="calculator__selecter_input"
+                id="bill_price"
                 type="number"
-                placeholder="$"
+                placeholder="0"
               />
             </form>
           </li>
@@ -35,23 +37,53 @@
             <div class="calculator__percentage_btns">
               <ul class="calculator__percentage_btns_list">
                 <li class="calculator__percentage_btns_item">
-                  <p class="calculator__percentage_btns_item_text">5%</p>
+                  <label class="calculator__percentage_btns_inputs">
+                    <span>5%</span>
+                    <input
+                      class="calculator__percentage_btn_text"
+                      type="radio"
+                    />
+                  </label>
                 </li>
                 <li class="calculator__percentage_btns_item">
-                  <p class="calculator__percentage_btns_item_text">10%</p>
+                  <label class="calculator__percentage_btns_inputs">
+                    <span>10%</span>
+                    <input
+                      class="calculator__percentage_btn_text"
+                      type="radio"
+                    />
+                  </label>
                 </li>
                 <li class="calculator__percentage_btns_item">
-                  <p class="calculator__percentage_btns_item_text">15%</p>
+                  <label class="calculator__percentage_btns_inputs">
+                    <span>15%</span>
+                    <input
+                      class="calculator__percentage_btn_text"
+                      type="radio"
+                    />
+                  </label>
                 </li>
               </ul>
               <ul class="calculator__percentage_btns_list">
                 <li class="calculator__percentage_btns_item">
-                  <p class="calculator__percentage_btns_item_text">25%</p>
+                  <label class="calculator__percentage_btns_inputs">
+                    <span>25%</span>
+                    <input
+                      class="calculator__percentage_btn_text"
+                      type="radio"
+                    />
+                  </label>
                 </li>
                 <li class="calculator__percentage_btns_item">
-                  <p class="calculator__percentage_btns_item_text">50%</p>
+                  <label class="calculator__percentage_btns_inputs">
+                    <span>50%</span>
+                    <input
+                      class="calculator__percentage_btn_text"
+                      type="radio"
+                    />
+                  </label>
                 </li>
-                <li class="calculator__percentage_btns_item_custom">
+                <li class="calculator__percentage_btn_custom">
                   <input
                     class="calculator__percentage_btns_input_custom"
                     type="number"
@@ -63,7 +95,11 @@
           </li>
           <li class="calculator__selecter_item">
             <p class="calculator__people">Number of People</p>
-            <input type="number" class="calculator__people_input" />
+            <input
+              type="number"
+              placeholder="0"
+              class="calculator__people_input"
+            />
           </li>
         </ul>
       </div>
@@ -84,7 +120,10 @@
             <h2 class="calculator__result_price">$32.79</h2>
           </li>
         </ul>
-        <div class="calculator__result_btn">RESET</div>
+        <label class="calculator__result_btn">
+          <span>RESET</span>
+          <input type="radio" />
+        </label>
       </div>
     </div>
   </body>
